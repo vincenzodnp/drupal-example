@@ -24,16 +24,16 @@ tasks:
     #     service: cli
     #     shell: bash
     - run:
+        name: drush cr
+        command: drush -y cr
+        service: cli
+    - run:
         name: drush cim
         command: drush -y cim
         service: cli
     - run:
         name: drush updb
         command: drush -y updb
-        service: cli
-    - run:
-        name: drush cr
-        command: drush -y cr
         service: cli
 
 
