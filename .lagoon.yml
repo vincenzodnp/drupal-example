@@ -47,4 +47,4 @@ environments:
         service: cli
     routes:
         - varnish:
-            - "drupal-example.amazee.io"
+            - "drupal-example-vdenaropapa.amazee.io"
