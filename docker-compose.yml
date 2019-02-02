@@ -122,6 +122,7 @@ services:
     environment:
       << : *default-environment
       VARNISH_BYPASS: "true" # by default we bypass varnish, change to 'false' or remove in order to tell varnish to cache if possible
+    user: root
     networks:
       - amazeeio-network
       - default
