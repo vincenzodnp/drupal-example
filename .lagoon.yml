@@ -1,6 +1,6 @@
 docker-compose-yaml: docker-compose.yml
 
-project: drupal-example
+project: drupal-example-vdenaropapa
 
 tasks:
 #   pre-rollout:
@@ -24,16 +24,16 @@ tasks:
     #     service: cli
     #     shell: bash
     - run:
-        name: drush cim
-        command: drush -y cim
+        name: drush cr
+        command: drush -y cr
         service: cli
+    #- run:
+    #    name: drush cim
+    #    command: drush -y cim
+    #    service: cli
     - run:
         name: drush updb
         command: drush -y updb
-        service: cli
-    - run:
-        name: drush cr
-        command: drush -y cr
         service: cli
 
 
@@ -47,4 +47,4 @@ environments:
         service: cli
     routes:
         - varnish:
-            - "drupal-example.amazee.io"
+            - "drupal-example-vdenaropapa.amazee.io"
