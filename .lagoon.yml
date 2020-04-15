@@ -42,7 +42,7 @@ environments:
   master:
     cronjobs:
       - name: drush cron
-        schedule: "*/12 * * * *"
+        schedule: "*/11 * * * *"
         command: drush cron
         service: cli
     routes:
