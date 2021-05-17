@@ -1,0 +1,2 @@
+FROM amazeeio/rabbitmq
+RUN rabbitmq-plugins enable rabbitmq_management rabbitmq_delayed_message_exchange
