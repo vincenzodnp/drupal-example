@@ -19,7 +19,7 @@ services:
       RABBITMQ_DEFAULT_USER: sge
       RABBITMQ_DEFAULT_PASS: sgetooR          
     labels:
-      lagoon.type: rabbitmq-cluster
+      lagoon.type: rabbitmq
                           
 #  be:                      
 #    build: ../            
