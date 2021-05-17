@@ -18,6 +18,8 @@ services:
       # Its also possible to use Docker secrets(https://docs.docker.com/engine/swarm/secrets/) in a file with RABBITMQ_DEFAULT_USER_FILE and RABBITMQ_DEFAULT_PASS_FILE
       RABBITMQ_DEFAULT_USER: sge
       RABBITMQ_DEFAULT_PASS: sgetooR          
+    labels:
+      lagoon.type: rabbitmq-cluster
                           
 #  be:                      
 #    build: ../            
